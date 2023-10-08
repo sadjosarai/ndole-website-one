@@ -4,6 +4,8 @@
     --white : #ffffff;
     --firstbg : #141414;
     --secondbg : rgba(35, 206, 145, 0.25);
+    --xsmall : 0.5em;
+    --small : 0.650em;
     --regular : 0.875em;
     --medium : 1.25em;
     --large : 2.25em;
@@ -133,7 +135,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     gap : 20px;
     color: #FFF;
     font-family: Poppins;
@@ -269,7 +271,6 @@ body{
 .text-container{
     display:flex;
     flex-direction: column;
-    flex:1 1;
     gap: 3em;
     height:100%;
 }
@@ -304,5 +305,93 @@ body{
 }
 .board p{
     text-align: center;
+}
+
+/* ----------------------  specialities --------------------------- */
+#specialities{
+    width:100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 14px 50px 50px 50px;
+}
+.spec-container{
+    width:100%;
+    height : 100%;
+    display: flex;
+    align-items: center;
+}
+.spec-text{
+    height : 100%;
+    width : 40%;
+    padding-bottom : 20px;
+    display: flex;
+    flex-direction: column; 
+}
+.slide-container{
+    width:60%;
+    height: 100%;
+    padding: 0px 30px;
+    display: flex;
+    gap : 20px;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.card-container{
+    width: 250px;
+    height: 250px;
+    overflow: "hidden";
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 2px 2px rgba(35.21, 206.13, 144.60, 0.30); 
+
+}
+.card{
+    width: 100%; 
+    height: calc(100% - 20px); 
+    background-color: rgba(77, 77, 77, 0.068);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding : 10px 25px;
+}
+.card-logo{
+    height:50%;
+    width:50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-logo img{
+    width:102%;
+    height :102%;
+}
+.card-title{
+    width:100%;
+    font-family: Poppins;
+    font-size: var(--medium);
+    font-weight: 800;
+}
+.card-description-container{
+    width:80%;
+    height:35%;
+    font-family: Poppins;
+    font-size:var(--small);
+    text-wrap: wrap;
+}
+.card-description-container p{
+    margin : 0px 0px;
+}
+.card-button{
+    width:100%;
+    height:10%;
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    font-size: var(--small);
+    color : var(--primary);
+    font-weight: 600;
 }
 
